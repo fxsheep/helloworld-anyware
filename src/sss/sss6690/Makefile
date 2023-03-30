@@ -1,7 +1,7 @@
 AS := sdas8051
 ASFLAGS := -l -o -s
 CC := sdcc
-CFLAGS := -mmcs51 --std-sdcc11 --model-small --stack-auto --code-loc 0x8000
+CFLAGS := -mmcs51 --std-sdcc11 --model-small --stack-auto --code-loc 0xb000
 OBJCOPY := sdobjcopy
 
 BINARIES := firmware.bin
@@ -19,6 +19,7 @@ firmware.ihx: main.rel vectors.rel
 
 %.bin: %.ihx
 	$(OBJCOPY) -I ihex -O binary $< $@
+	truncate -s 4096 $@
 
 clean:
 	rm -f *.asm *.bin *.fw *.ihx *.lk *.lst *.map *.mem *.rel *.rst *.sym
