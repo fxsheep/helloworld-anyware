@@ -1,5 +1,5 @@
 # helloworld-anyware
-Non-exhausive list of examples of running HelloWorld on anything that has a CPU and firmware
+Non-exhausive list of HelloWorld running on anything that (secretly) has a CPU and firmware
 
 ## Intro
 You're probably viewing this text using a computer(PC, laptop, mobile phone or tablet). However, you're actually not doing so with a single computer, but with many computers. This is true for any modern PC or mobile device, because almost every peripheral/gadget today includes its own CPU, RAM, ROM and runs a firmware code. In short, they are computers on their own.  
