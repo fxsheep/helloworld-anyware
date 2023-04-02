@@ -10,7 +10,7 @@
 
 ### Dependencies
 ```
-sudo apt install sdcc sg3-utils
+sudo apt install sdcc
 ```
 
 ### Build
