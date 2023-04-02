@@ -19,4 +19,5 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |---------------------|---------------------|-----------------------------------------|
 |   USB Flash Drive   |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |
 |   USB Flash Drive   | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |
+|    Wi-Fi adapter    |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |
 
