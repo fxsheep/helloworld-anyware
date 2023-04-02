@@ -103,6 +103,7 @@ while True:
     page = fw.read(RTL_FW_PAGE_SIZE)
     if len(page) == 0:
         break
+    #Bank switching
     val = xram_readb(REG_MCU_FW_DL + 2) & 0xF8
     val = val | i
     xram_writeb(REG_MCU_FW_DL + 2, val)
