@@ -14,10 +14,12 @@ Running a custom firmware may cause unexpected behavior and brick/physically dam
 ## Usage
 Each hardware/peripheral has its own way to build(different CPU architectures), load(different DFU/ISP implementations) and run(different output devices, such as an LED) a HelloWorld. Please refer to chip-specific description for details. Find your target using the table below.
 
-## Supported hardwares
-|      Category       |     Manufacturer    |                  Chip                   | 
-|---------------------|---------------------|-----------------------------------------|
-|   USB Flash Drive   |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |
-|   USB Flash Drive   | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |
-|    Wi-Fi adapter    |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |
+## List of hardwares
+|      Category       |     Manufacturer    |                  Chip                   | Status  |
+|---------------------|---------------------|-----------------------------------------|---------|
+|  Bluetooth adapter  |       Atheros       |      [AR3011](./src/atheros/ar3011)     |   WIP   |
+|   USB Flash Drive   |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |Supported|
+|   USB Flash Drive   | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |Supported|
+|    Wi-Fi adapter    |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |Supported|
+|    Wi-Fi adapter    |       Realtek       |   [RTL8191SU](./src/realtek/rtl8191su)  |   WIP   |
 
