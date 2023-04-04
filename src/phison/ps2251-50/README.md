@@ -20,6 +20,13 @@ make
 
 ### Load
 Assuming the drive is `/dev/sda`
+
+If your device is in normal mode(i.e. "working properly"), enter BootROM mode:
+```
+sudo sg_raw /dev/sda 06 b3 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+```
+
+Load custom code to SRAM in BootROM mode:
 ```
 sudo sg_raw -s 512 /dev/sda 06 b1 03 00 00 00 00 00 01 00 00 00 00 00 00 00 < header.bin
 sudo sg_raw -s 4096 /dev/sda 06 b1 02 00 00 00 00 00 08 00 00 00 00 00 00 00 < firmware.bin
