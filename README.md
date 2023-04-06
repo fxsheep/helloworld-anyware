@@ -32,6 +32,7 @@ Details of how a chip works varies vastly from one chip to another, hence here's
 - Diving into the details
   - Linux kernel driver source (e.g. Wi-Fi cards)
   - Manufacturer tools (e.g. USB flash drives)
+  - [fwupd](https://github.com/fwupd/fwupd) project 
   - USB packet capture
   - Firmware blob
 - Sorting out the details
