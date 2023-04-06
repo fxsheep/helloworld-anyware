@@ -24,3 +24,37 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |    Wi-Fi adapter    |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |Supported|
 |    Wi-Fi adapter    |       Realtek       |   [RTL8191SU](./src/realtek/rtl8191su)  |   WIP   |
 
+## Adding support for new devices
+Details of how a chip works varies vastly from one chip to another, hence here's only a general route if you want to add support for a new device.
+- Gathering information about your target device
+  - What chip does it use (lsusb, teardown, etc.)
+  - Datasheet of the chip (CPU architecture, pinout for GPIO/LED)
+- Diving into the details
+  - Linux kernel driver source (e.g. Wi-Fi cards)
+  - Manufacturer tools (e.g. USB flash drives)
+  - USB packet capture
+  - Firmware blob
+- Sorting out the details
+  - DFU/ISP protocol
+  - Firmware load address (usually not zero)
+  - Firmware usage (some uses the firmware as a library, called by bootrom)
+  - Hardware initialization (not required by most)
+  - Output 'device' (GPIO/LED registers)
+- Implementing a custom firmware
+  - Toolchain (may not be readily available in e.g. `apt`)
+  - A startup asm file (a 'good' entry point, HW init)
+  - A minimal main.c (toggles LED etc.)
+  - A Makefile
+- Implementing a minimal firmware loader
+  - Talk to the chip with its DFU/ISP protocol
+  - Not necessarily required when protocol is simple enough (e.g. use `sg_raw`)
+
+## What's next (beyond this repo)
+Getting a minimal program to run is the first step towards a custom firmware. Here are some possible next steps:
+- Implementing a bit-banged UART TX/'Ir'DA via LED
+  - Dumping the internal ROM
+- Experimenting with unknown registers
+- Implementing a FOSS alternative firmware
+- Repurposing the device, e.g.
+  - A NAND programmer/USB to parallel port with USB flash drive controllers
+
