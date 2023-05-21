@@ -23,7 +23,7 @@ Assuming the drive is `/dev/sda`
 
 If your device is in normal mode(i.e. "working properly"), enter BootROM mode:
 ```
-sudo sg_raw /dev/sda 06 b3 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+sudo sg_raw /dev/sda 06 bf 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 ```
 
 Load custom code to SRAM in BootROM mode:
