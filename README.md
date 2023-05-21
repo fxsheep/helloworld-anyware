@@ -21,6 +21,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |  CMMB TV receiver   |        Siano        |      [SMS1180](./src/siano/sms1180)     |   WIP   |
 |   USB Flash Drive   |        Huayi        |      [HY6919](./src/huayi/hy6919)       |Supported|
 |   USB Flash Drive   |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |Supported|
+|   USB Flash Drive   |       Phison        |[PS2251-70-25](./src/phison/ps2251-70-25)|Supported|
 |   USB Flash Drive   | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |Supported|
 |    Wi-Fi adapter    |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |Supported|
 |    Wi-Fi adapter    |       Realtek       |   [RTL8191SU](./src/realtek/rtl8191su)  |   WIP   |
