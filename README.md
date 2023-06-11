@@ -15,41 +15,41 @@ Running a custom firmware may cause unexpected behavior and brick/physically dam
 Each hardware/peripheral has its own way to build(different CPU architectures), load(different DFU/ISP implementations) and run(different output devices, such as an LED) a HelloWorld. Please refer to chip-specific description for details. Find your target using the table below.
 
 ## List of hardwares
-|         Category          |     Manufacturer    |                  Chip                   |   Status    |
-|---------------------------|---------------------|-----------------------------------------|-------------|
-|     Bluetooth adapter     |       Atheros       |      [AR3011](./src/atheros/ar3011)     |     WIP     |
-|        Card Reader        |    Genesys Logic    |                GL3223                   | Unsupported |
-|        Card Reader        |    Genesys Logic    |                GL3233                   | Unsupported |
-|       CD-ROM Drive        |      MediaTek       |                MT1198                   | Unsupported |
-|     CMMB TV receiver      |        Siano        |      [SMS1180](./src/siano/sms1180)     |     WIP     |
-|           eMMC            |       Samsung       |                 VNC                     | Unsupported |
-|     Hard Disk Drive       |       Marvell       |                88I6889                  | Unsupported |
-|         Laptop EC         |       ITE Tech      |                IT8586                   | Unsupported |
-|         Laptop EC         |       ITE Tech      |                IT8987                   | Unsupported |
-|   Touch Panel Controller  |      FocalTech      |                FT5x06                   | Unsupported |
-|   Touch Panel Controller  |       Melfas        |                MMS134S                  | Unsupported |
-|     Solid State Drive     |      SanDisk        |                Milpitas                 | Unsupported |
-|      USB Flash Drive      |        Huayi        |      [HY6919](./src/huayi/hy6919)       |  Supported  |
-|      USB Flash Drive      |     Alcor Micro     |               AU6989SN                  | Unsupported |
-|      USB Flash Drive      |       Phison        |               PS2251-06                 | Unsupported |
-|      USB Flash Drive      |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |  Supported  |
-|      USB Flash Drive      |       Phison        |[PS2251-70-25](./src/phison/ps2251-70-25)|  Supported  |
-|      USB Flash Drive      |      SanDisk        |                Anisha                   | Unsupported |
-|      USB Flash Drive      |      SanDisk        |                Karona                   | Unsupported |
-|      USB Flash Drive      |      SanDisk        |                Sumeru                   | Unsupported |
-|      USB Flash Drive      |    Silicon Motion   |                SM3257                   | Unsupported |
-|      USB Flash Drive      |    Silicon Motion   |                SM3259                   | Unsupported |
-|      USB Flash Drive      |    Silicon Motion   |                SM3280                   | Unsupported |
-|      USB Flash Drive      | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |  Supported  |
-|          USB Hub          |    Genesys Logic    |                GL3520                   | Unsupported |
-|       Wi-Fi adapter       |       Atheros       |                AR9271                   | Unsupported |
-|       Wi-Fi adapter       |       Marvell       |                88W8801                  | Unsupported |
-|       Wi-Fi adapter       |      MediaTek       |                MT7601                   | Unsupported |
-|       Wi-Fi adapter       |      Qualcomm       |                QCA6391                  | Unsupported |
-|       Wi-Fi adapter       |       Ralink        |                RT2571                   | Unsupported |
-|       Wi-Fi adapter       |       Ralink        |                RT2870                   | Unsupported |
-|       Wi-Fi adapter       |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |  Supported  |
-|       Wi-Fi adapter       |       Realtek       |   [RTL8191SU](./src/realtek/rtl8191su)  |     WIP     |
+|         Category          |     Manufacturer    |                  Chip                   | CPU Architecture |   Status    |
+|---------------------------|---------------------|-----------------------------------------|------------------|-------------|
+|     Bluetooth adapter     |       Atheros       |      [AR3011](./src/atheros/ar3011)     |      Xtensa      |     WIP     |
+|        Card Reader        |    Genesys Logic    |                GL3223                   |       8051       | Unsupported |
+|        Card Reader        |    Genesys Logic    |                GL3233                   |       8051       | Unsupported |
+|       CD-ROM Drive        |      MediaTek       |                MT1198                   |       8051       | Unsupported |
+|     CMMB TV receiver      |        Siano        |      [SMS1180](./src/siano/sms1180)     |       ARC        |     WIP     |
+|           eMMC            |       Samsung       |                 VNC                     |       ARM        | Unsupported |
+|     Hard Disk Drive       |       Marvell       |                88I6889                  |       ARM        | Unsupported |
+|         Laptop EC         |       ITE Tech      |                IT8586                   |       8051       | Unsupported |
+|         Laptop EC         |       ITE Tech      |                IT8987                   |       8051       | Unsupported |
+|   Touch Panel Controller  |      FocalTech      |                FT5x06                   |       8051       | Unsupported |
+|   Touch Panel Controller  |       Melfas        |                MMS134S                  |       ARM        | Unsupported |
+|     Solid State Drive     |      SanDisk        |                Milpitas                 |       ARC        | Unsupported |
+|      USB Flash Drive      |        Huayi        |      [HY6919](./src/huayi/hy6919)       |       8051       |  Supported  |
+|      USB Flash Drive      |     Alcor Micro     |               AU6989SN                  |       8051       | Unsupported |
+|      USB Flash Drive      |       Phison        |               PS2251-06                 |       8051       | Unsupported |
+|      USB Flash Drive      |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |       8051       |  Supported  |
+|      USB Flash Drive      |       Phison        |[PS2251-70-25](./src/phison/ps2251-70-25)|       8051       |  Supported  |
+|      USB Flash Drive      |      SanDisk        |                Anisha                   |       ARC        | Unsupported |
+|      USB Flash Drive      |      SanDisk        |                Karona                   |       ARC        | Unsupported |
+|      USB Flash Drive      |      SanDisk        |                Sumeru                   |       ARC        | Unsupported |
+|      USB Flash Drive      |    Silicon Motion   |                SM3257                   |       8051       | Unsupported |
+|      USB Flash Drive      |    Silicon Motion   |                SM3259                   |       8051       | Unsupported |
+|      USB Flash Drive      |    Silicon Motion   |                SM3280                   |       ARC        | Unsupported |
+|      USB Flash Drive      | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |       8051       |  Supported  |
+|          USB Hub          |    Genesys Logic    |                GL3520                   |       8051       | Unsupported |
+|       Wi-Fi adapter       |       Atheros       |                AR9271                   |      Xtensa      | Unsupported |
+|       Wi-Fi adapter       |       Marvell       |                88W8801                  |       ARM        | Unsupported |
+|       Wi-Fi adapter       |      MediaTek       |                MT7601                   |      NDS32       | Unsupported |
+|       Wi-Fi adapter       |      Qualcomm       |                QCA6391                  |      QDSP6v6     | Unsupported |
+|       Wi-Fi adapter       |       Ralink        |                RT2571                   |       8051       | Unsupported |
+|       Wi-Fi adapter       |       Ralink        |                RT2870                   |       8051       | Unsupported |
+|       Wi-Fi adapter       |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |       8051       |  Supported  |
+|       Wi-Fi adapter       |       Realtek       |   [RTL8191SU](./src/realtek/rtl8191su)  |       MIPS       |     WIP     |
 
 ## Adding support for new devices
 Details of how a chip works varies vastly from one chip to another, hence here's only a general route if you want to add support for a new device.
