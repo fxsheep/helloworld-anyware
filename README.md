@@ -15,16 +15,41 @@ Running a custom firmware may cause unexpected behavior and brick/physically dam
 Each hardware/peripheral has its own way to build(different CPU architectures), load(different DFU/ISP implementations) and run(different output devices, such as an LED) a HelloWorld. Please refer to chip-specific description for details. Find your target using the table below.
 
 ## List of hardwares
-|      Category       |     Manufacturer    |                  Chip                   | Status  |
-|---------------------|---------------------|-----------------------------------------|---------|
-|  Bluetooth adapter  |       Atheros       |      [AR3011](./src/atheros/ar3011)     |   WIP   |
-|  CMMB TV receiver   |        Siano        |      [SMS1180](./src/siano/sms1180)     |   WIP   |
-|   USB Flash Drive   |        Huayi        |      [HY6919](./src/huayi/hy6919)       |Supported|
-|   USB Flash Drive   |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |Supported|
-|   USB Flash Drive   |       Phison        |[PS2251-70-25](./src/phison/ps2251-70-25)|Supported|
-|   USB Flash Drive   | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |Supported|
-|    Wi-Fi adapter    |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |Supported|
-|    Wi-Fi adapter    |       Realtek       |   [RTL8191SU](./src/realtek/rtl8191su)  |   WIP   |
+|         Category          |     Manufacturer    |                  Chip                   |   Status    |
+|---------------------------|---------------------|-----------------------------------------|-------------|
+|     Bluetooth adapter     |       Atheros       |      [AR3011](./src/atheros/ar3011)     |     WIP     |
+|        Card Reader        |    Genesys Logic    |                GL3223                   | Unsupported |
+|        Card Reader        |    Genesys Logic    |                GL3233                   | Unsupported |
+|       CD-ROM Drive        |      MediaTek       |                MT1198                   | Unsupported |
+|     CMMB TV receiver      |        Siano        |      [SMS1180](./src/siano/sms1180)     |     WIP     |
+|           eMMC            |       Samsung       |                 VNC                     | Unsupported |
+|     Hard Disk Drive       |       Marvell       |                88I6889                  | Unsupported |
+|         Laptop EC         |       ITE Tech      |                IT8586                   | Unsupported |
+|         Laptop EC         |       ITE Tech      |                IT8987                   | Unsupported |
+|   Touch Panel Controller  |      FocalTech      |                FT5x06                   | Unsupported |
+|   Touch Panel Controller  |       Melfas        |                MMS134S                  | Unsupported |
+|     Solid State Drive     |      SanDisk        |                Milpitas                 | Unsupported |
+|      USB Flash Drive      |        Huayi        |      [HY6919](./src/huayi/hy6919)       |  Supported  |
+|      USB Flash Drive      |     Alcor Micro     |               AU6989SN                  | Unsupported |
+|      USB Flash Drive      |       Phison        |               PS2251-06                 | Unsupported |
+|      USB Flash Drive      |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |  Supported  |
+|      USB Flash Drive      |       Phison        |[PS2251-70-25](./src/phison/ps2251-70-25)|  Supported  |
+|      USB Flash Drive      |      SanDisk        |                Anisha                   | Unsupported |
+|      USB Flash Drive      |      SanDisk        |                Karona                   | Unsupported |
+|      USB Flash Drive      |      SanDisk        |                Sumeru                   | Unsupported |
+|      USB Flash Drive      |    Silicon Motion   |                SM3257                   | Unsupported |
+|      USB Flash Drive      |    Silicon Motion   |                SM3259                   | Unsupported |
+|      USB Flash Drive      |    Silicon Motion   |                SM3280                   | Unsupported |
+|      USB Flash Drive      | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |  Supported  |
+|          USB Hub          |    Genesys Logic    |                GL3520                   | Unsupported |
+|       Wi-Fi adapter       |       Atheros       |                AR9271                   | Unsupported |
+|       Wi-Fi adapter       |       Marvell       |                88W8801                  | Unsupported |
+|       Wi-Fi adapter       |      MediaTek       |                MT7601                   | Unsupported |
+|       Wi-Fi adapter       |      Qualcomm       |                QCA6391                  | Unsupported |
+|       Wi-Fi adapter       |       Ralink        |                RT2571                   | Unsupported |
+|       Wi-Fi adapter       |       Ralink        |                RT2870                   | Unsupported |
+|       Wi-Fi adapter       |       Realtek       |   [RTL8188EU](./src/realtek/rtl8188eu)  |  Supported  |
+|       Wi-Fi adapter       |       Realtek       |   [RTL8191SU](./src/realtek/rtl8191su)  |     WIP     |
 
 ## Adding support for new devices
 Details of how a chip works varies vastly from one chip to another, hence here's only a general route if you want to add support for a new device.
