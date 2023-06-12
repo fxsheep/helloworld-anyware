@@ -42,7 +42,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |      USB Flash Drive      |    Silicon Motion   |                SM3280                   |       ARC        | Unsupported |
 |      USB Flash Drive      | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |       8051       |  Supported  |
 |          USB Hub          |    Genesys Logic    |                GL3520                   |       8051       | Unsupported |
-|       Wi-Fi adapter       |       Atheros       |                AR9271                   |      Xtensa      | Unsupported |
+|       Wi-Fi adapter       |       Atheros       |      [AR9271](./src/atheros/ar9271)     |      Xtensa      |     WIP     |
 |       Wi-Fi adapter       |       Marvell       |                88W8801                  |       ARM        | Unsupported |
 |       Wi-Fi adapter       |      MediaTek       |                MT7601                   |      NDS32       | Unsupported |
 |       Wi-Fi adapter       |      Qualcomm       |                QCA6391                  |      QDSP6v6     | Unsupported |
