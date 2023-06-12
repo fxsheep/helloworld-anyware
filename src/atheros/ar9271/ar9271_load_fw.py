@@ -59,7 +59,7 @@ if dev.is_kernel_driver_active(0):
     dev.detach_kernel_driver(0)
 dev.set_configuration()
 
-fw = open(sys.argv[1], mode='rb')
+fw = open(args.firmware, mode='rb')
 
 memaddr = AR9271_FIRMWARE_BASE
 
