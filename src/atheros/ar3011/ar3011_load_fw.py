@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys,usb
+import argparse,sys,usb
 
 #USB protocol
 USB_TYPE_MASK = (0x03 << 5)
@@ -29,11 +29,24 @@ BULK_SIZE = 4096
 FW_HDR_SIZE = 20
 USB_EP_DFU_BULK = 0x02
 
-if len(sys.argv) != 2 :
-    print("usage: ar3011_load_fw.py <firmware>")
-    exit()
+vid = 0x0cf3
+pid = 0x3000
 
-dev = usb.core.find(idVendor=0x0cf3, idProduct=0x3000)
+def auto_int(x):
+    return int(x, 0)
+
+parser = argparse.ArgumentParser(description='Load AR3011 firmware')
+parser.add_argument('firmware', type=str, help='firmware filename')
+parser.add_argument('--vid', type=auto_int, help='USB VID')
+parser.add_argument('--pid', type=auto_int, help='USB PID')
+args = parser.parse_args()
+
+if(args.vid):
+    vid = args.vid
+if(args.pid):
+    pid = args.pid
+
+dev = usb.core.find(idVendor=vid, idProduct=pid)
 if (dev == None):
     print("No AR3011 BootROM device found")
     exit()
@@ -41,7 +54,7 @@ if dev.is_kernel_driver_active(0):
     dev.detach_kernel_driver(0)
 dev.set_configuration()
 
-fw = open(sys.argv[1], mode='rb')
+fw = open(args.firmware, mode='rb')
 
 dev.ctrl_transfer(USB_VENDOR_REQUEST_OUT, USB_REQ_DFU_DNLOAD, 0, 0, fw.read(FW_HDR_SIZE))
 
