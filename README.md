@@ -20,28 +20,45 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |     Bluetooth adapter     |       Atheros       |      [AR3011](./src/atheros/ar3011)     |      Xtensa      |     WIP     |
 |        Card Reader        |    Genesys Logic    |                GL3223                   |       8051       | Unsupported |
 |        Card Reader        |    Genesys Logic    |                GL3233                   |       8051       | Unsupported |
+|        Card Reader        |      Prolific       |                PL2733                   |       8051       | Unsupported |
+|        Card Reader        |    Silicon Motion   |                SM330                    |       8051       | Unsupported |
 |       CD-ROM Drive        |      MediaTek       |                MT1198                   |       8051       | Unsupported |
 |     CMMB TV receiver      |        Siano        |      [SMS1180](./src/siano/sms1180)     |       ARC        |     WIP     |
 |           eMMC            |       Samsung       |                 VNC                     |       ARM        | Unsupported |
 |     Hard Disk Drive       |       Marvell       |                88I6889                  |       ARM        | Unsupported |
 |         Laptop EC         |       ITE Tech      |                IT8586                   |       8051       | Unsupported |
 |         Laptop EC         |       ITE Tech      |                IT8987                   |       8051       | Unsupported |
-|     Solid State Drive     |      SanDisk        |                Milpitas                 |       ARC        | Unsupported |
+|     Solid State Drive     |       JMicron       |                JMF605                   |       ARM        | Unsupported |
+|     Solid State Drive     |       JMicron       |                JMF608                   |       ARM        | Unsupported |
+|     Solid State Drive     |       JMicron       |                JMF667                   |       ARM        | Unsupported |
+|     Solid State Drive     |       Marvell       |                88NV1120                 |       ARM        | Unsupported |
+|     Solid State Drive     |       Marvell       |                88SS1074                 |       ARM        | Unsupported |
+|     Solid State Drive     |       Phison        |                PS3111                   |       ARM        | Unsupported |
+|     Solid State Drive     |       Samsung       |               S4LN045X01                |       ARM        | Unsupported |
+|     Solid State Drive     |       SanDisk       |                Milpitas                 |       ARC        | Unsupported |
+|     Solid State Drive     |    Silicon Motion   |                SM222                    |       8051       | Unsupported |
+|     Solid State Drive     |    Silicon Motion   |                SM223                    |       8051       | Unsupported |
+|     Solid State Drive     |    Silicon Motion   |                SM2231                   |       8051       | Unsupported |
+|     Solid State Drive     |    Silicon Motion   |                SM2246                   |       ARC        | Unsupported |
+|     Solid State Drive     |    Silicon Motion   |                SM2256                   |       ARC        | Unsupported |
+|     Solid State Drive     |    Silicon Motion   |                SM2258                   |       ARC        | Unsupported |
+|     Solid State Drive     |    Silicon Motion   |                SM2259                   |       ARC        | Unsupported |
 |   Touch Panel Controller  |      FocalTech      |                FT5x06                   |       8051       | Unsupported |
 |   Touch Panel Controller  |       Melfas        |                MMS134S                  |       ARM        | Unsupported |
-|      USB Flash Drive      |        Huayi        |      [HY6919](./src/huayi/hy6919)       |       8051       |  Supported  |
 |      USB Flash Drive      |     Alcor Micro     |               AU6989SN                  |       8051       | Unsupported |
+|      USB Flash Drive      |        Huayi        |      [HY6919](./src/huayi/hy6919)       |       8051       |  Supported  |
 |      USB Flash Drive      |       Phison        |               PS2251-06                 |       8051       | Unsupported |
 |      USB Flash Drive      |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |       8051       |  Supported  |
 |      USB Flash Drive      |       Phison        |[PS2251-70-25](./src/phison/ps2251-70-25)|       8051       |  Supported  |
-|      USB Flash Drive      |      SanDisk        |                Anisha                   |       ARC        | Unsupported |
-|      USB Flash Drive      |      SanDisk        |                Karona                   |       ARC        | Unsupported |
-|      USB Flash Drive      |      SanDisk        |                Sumeru                   |       ARC        | Unsupported |
+|      USB Flash Drive      |       SanDisk       |                Anisha                   |       ARC        | Unsupported |
+|      USB Flash Drive      |       SanDisk       |                Karona                   |       ARC        | Unsupported |
+|      USB Flash Drive      |       SanDisk       |                Sumeru                   |       ARC        | Unsupported |
 |      USB Flash Drive      |    Silicon Motion   |                SM3257                   |       8051       | Unsupported |
 |      USB Flash Drive      |    Silicon Motion   |                SM3259                   |       8051       | Unsupported |
 |      USB Flash Drive      |    Silicon Motion   |                SM3280                   |       ARC        | Unsupported |
 |      USB Flash Drive      | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |       8051       |  Supported  |
 |          USB Hub          |    Genesys Logic    |                GL3520                   |      Unknown     | Unsupported |
+|      USB-SATA adapter     |       JMicron       |                JM20339                  |       8051       | Unsupported |
 |       Wi-Fi adapter       |       Atheros       |      [AR9271](./src/atheros/ar9271)     |      Xtensa      |     WIP     |
 |       Wi-Fi adapter       |       Marvell       |                88W8801                  |       ARM        | Unsupported |
 |       Wi-Fi adapter       |      MediaTek       |                MT7601                   |      NDS32       | Unsupported |
