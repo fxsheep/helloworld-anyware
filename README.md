@@ -26,9 +26,9 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |     Hard Disk Drive       |       Marvell       |                88I6889                  |       ARM        | Unsupported |
 |         Laptop EC         |       ITE Tech      |                IT8586                   |       8051       | Unsupported |
 |         Laptop EC         |       ITE Tech      |                IT8987                   |       8051       | Unsupported |
+|     Solid State Drive     |      SanDisk        |                Milpitas                 |       ARC        | Unsupported |
 |   Touch Panel Controller  |      FocalTech      |                FT5x06                   |       8051       | Unsupported |
 |   Touch Panel Controller  |       Melfas        |                MMS134S                  |       ARM        | Unsupported |
-|     Solid State Drive     |      SanDisk        |                Milpitas                 |       ARC        | Unsupported |
 |      USB Flash Drive      |        Huayi        |      [HY6919](./src/huayi/hy6919)       |       8051       |  Supported  |
 |      USB Flash Drive      |     Alcor Micro     |               AU6989SN                  |       8051       | Unsupported |
 |      USB Flash Drive      |       Phison        |               PS2251-06                 |       8051       | Unsupported |
