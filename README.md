@@ -21,6 +21,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |        Card Reader        |    Genesys Logic    |                GL3223                   |       8051       | Unsupported |
 |        Card Reader        |    Genesys Logic    |                GL3233                   |       8051       | Unsupported |
 |        Card Reader        |      Prolific       |                PL2733                   |       8051       | Unsupported |
+|        Card Reader        |       Realtek       |                RTS5306                  |       8051       | Unsupported |
 |        Card Reader        |    Silicon Motion   |                SM330                    |       8051       | Unsupported |
 |       CD-ROM Drive        |      MediaTek       |                MT1198                   |       8051       | Unsupported |
 |     CMMB TV receiver      |        Siano        |      [SMS1180](./src/siano/sms1180)     |       ARC        |     WIP     |
