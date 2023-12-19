@@ -33,7 +33,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |     Solid State Drive     |       JMicron       |                JMF667                   |       ARM        | Unsupported |
 |     Solid State Drive     |       Marvell       |                88NV1120                 |       ARM        | Unsupported |
 |     Solid State Drive     |       Marvell       |                88SS1074                 |       ARM        | Unsupported |
-|     Solid State Drive     |       Phison        |                PS3111                   |       ARM        | Unsupported |
+|     Solid State Drive     |       Phison        |                PS3111                   |      Xtensa      | Unsupported |
 |     Solid State Drive     |       Samsung       |               S4LN045X01                |       ARM        | Unsupported |
 |     Solid State Drive     |       SanDisk       |                Milpitas                 |       ARC        | Unsupported |
 |     Solid State Drive     |    Silicon Motion   |                SM222                    |       8051       | Unsupported |
