@@ -29,12 +29,12 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |     Hard Disk Drive       |       Marvell       |                88I6889                  |       ARM        | Unsupported |
 |         Laptop EC         |       ITE Tech      |                IT8586                   |       8051       | Unsupported |
 |         Laptop EC         |       ITE Tech      |                IT8987                   |       8051       | Unsupported |
-|     Solid State Drive     |       JMicron       |                JMF605                   |       ARM        | Unsupported |
-|     Solid State Drive     |       JMicron       |                JMF608                   |       ARM        | Unsupported |
-|     Solid State Drive     |       JMicron       |                JMF667                   |       ARM        | Unsupported |
-|     Solid State Drive     |       Marvell       |                88NV1120                 |       ARM        | Unsupported |
+|     Solid State Drive     |       JMicron       |     [JMF605](./src/jmicron/jmf605)      |       ARM        |     WIP     |
+|     Solid State Drive     |       JMicron       |     [JMF608](./src/jmicron/jmf608)      |       ARM        |     WIP     |
+|     Solid State Drive     |       JMicron       |     [JMF667](./src/jmicron/jmf667)      |       ARM        |     WIP     |
+|     Solid State Drive     |       Marvell       |   [88NV1120](./src/marvell/88nv1120)    |       ARM        |     WIP     |
 |     Solid State Drive     |       Marvell       |                88SS1074                 |       ARM        | Unsupported |
-|     Solid State Drive     |       Phison        |                PS3111                   |      Xtensa      | Unsupported |
+|     Solid State Drive     |       Phison        |      [PS3111](./src/phison/ps3111)      |      Xtensa      |     WIP     |
 |     Solid State Drive     |       Samsung       |               S4LN045X01                |       ARM        | Unsupported |
 |     Solid State Drive     |       SanDisk       |                Milpitas                 |       ARC        | Unsupported |
 |     Solid State Drive     |    Silicon Motion   |                SM222                    |       8051       | Unsupported |
@@ -59,7 +59,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |      USB Flash Drive      |    Silicon Motion   |                SM3280                   |       ARC        | Unsupported |
 |      USB Flash Drive      | Solid State Systems |     [SSS6690](./src/sss/sss6690)        |       8051       |  Supported  |
 |          USB Hub          |    Genesys Logic    |                GL3520                   |      Unknown     | Unsupported |
-|      USB-SATA adapter     |       JMicron       |                JM20339                  |       8051       | Unsupported |
+|      USB-SATA adapter     |       JMicron       |     [JM20339](./src/jmicron/jm20339)    |       8051       |     WIP     |
 |       Wi-Fi adapter       |       Atheros       |      [AR9271](./src/atheros/ar9271)     |      Xtensa      |     WIP     |
 |       Wi-Fi adapter       |       Marvell       |                88W8801                  |       ARM        | Unsupported |
 |       Wi-Fi adapter       |      MediaTek       |                MT7601                   |      NDS32       | Unsupported |
