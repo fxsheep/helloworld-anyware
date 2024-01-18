@@ -49,6 +49,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |      USB Flash Drive      |     Alcor Micro     |    [AU6989SN](./src/alcor/au6989sn)     |       8051       |  Supported  |
 |      USB Flash Drive      |        Huayi        |      [HY6919](./src/huayi/hy6919)       |       8051       |  Supported  |
 |      USB Flash Drive      |       Phison        |               PS2251-06                 |       8051       | Unsupported |
+|      USB Flash Drive      |       Phison        |   [PS2251-07](./src/phison/ps2251-07)   |       8051       |  Supported  |
 |      USB Flash Drive      |       Phison        |   [PS2251-50](./src/phison/ps2251-50)   |       8051       |  Supported  |
 |      USB Flash Drive      |       Phison        |[PS2251-70-25](./src/phison/ps2251-70-25)|       8051       |  Supported  |
 |      USB Flash Drive      |       SanDisk       |                Anisha                   |       ARC        | Unsupported |
