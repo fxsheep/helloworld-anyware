@@ -18,6 +18,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |         Category          |     Manufacturer    |                  Chip                   | CPU Architecture |   Status    |
 |---------------------------|---------------------|-----------------------------------------|------------------|-------------|
 |     Bluetooth adapter     |       Atheros       |      [AR3011](./src/atheros/ar3011)     |      Xtensa      |     WIP     |
+|     Bluetooth adapter     |        Intel        |        [AX210](./src/intel/ibt)         |       ARC        | Unsupported |
 |        Card Reader        |    Genesys Logic    |                GL3223                   |       8051       | Unsupported |
 |        Card Reader        |    Genesys Logic    |                GL3233                   |       8051       | Unsupported |
 |        Card Reader        |      Prolific       |                PL2733                   |       8051       | Unsupported |
@@ -62,6 +63,7 @@ Each hardware/peripheral has its own way to build(different CPU architectures), 
 |          USB Hub          |    Genesys Logic    |                GL3520                   |      Unknown     | Unsupported |
 |      USB-SATA adapter     |       JMicron       |     [JM20339](./src/jmicron/jm20339)    |       8051       |     WIP     |
 |       Wi-Fi adapter       |       Atheros       |      [AR9271](./src/atheros/ar9271)     |      Xtensa      |     WIP     |
+|       Wi-Fi adapter       |        Intel        |      [AX210](./src/intel/iwlwifi)       |       ARC        | Unsupported |
 |       Wi-Fi adapter       |       Marvell       |                88W8801                  |       ARM        | Unsupported |
 |       Wi-Fi adapter       |      MediaTek       |                MT7601                   |      NDS32       | Unsupported |
 |       Wi-Fi adapter       |      Qualcomm       |                QCA6391                  |      QDSP6v6     | Unsupported |
